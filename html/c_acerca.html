@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto_CS</title>
+    <link rel="stylesheet" href="../css/estilo_interno.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var authenticated = localStorage.getItem('authenticated');
+            if (authenticated !== 'true') {
+                alert('Debe iniciar sesión primero.');
+                window.location.href = '../index.html'; 
+                return; 
+            } else {
+                var nombreUsuario = localStorage.getItem('nombreUsuario');
+                if (nombreUsuario) {
+                    document.getElementById('nombreUsuario').textContent = nombreUsuario;
+                }
+            }
+        });
+
+        function Cerrar() {
+            localStorage.removeItem('nombreUsuario');
+            localStorage.removeItem('authenticated');
+            window.location.href = '../index.html';
+            alert('Cerrando...');
+            window.location.href = '../index.html';
+        }
+    </script>   
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/I_Logo.jpg" alt="Logo_Marca">
+        </div>
+        <nav>
+            <ul class="Links">
+                <li><a href="ip_cliente.html">Inicio</a></li>
+                <li><a href="c_en_proceso.html">En Proceso</a></li>
+                <li><a href="c_acerca.html">Nosotros</a></li>
+                <li><p><span id="nombreUsuario"></span></p></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button onclick="Cerrar()">Cerrar sesión</button></a>
+    </header>
+
+    <div class="base">
+        <div class="contenido">
+            <h1>¿Quiénes somos?</h1>
+            <br>
+            <p>
+                Nuestro equipo multidisciplinario está compuesto por expertos en tecnología, ingeniería automotriz, y
+                gestión empresarial. Nos destacamos por nuestra pasión por la innovación y nuestro compromiso con la
+                excelencia en el servicio. Cada miembro de nuestro equipo aporta un conjunto único de habilidades y
+                experiencias que nos permite desarrollar soluciones tecnológicas de vanguardia y ofrecer un servicio
+                excepcional a nuestros clientes.
+            </p>
+            <br>
+            <p>
+                Además, nos enorgullece ofrecer una plataforma diseñada para satisfacer las necesidades de diferentes
+                roles dentro de un taller automotriz. Los clientes disfrutan de una experiencia fluida y personalizada,
+                con acceso a información sobre el estado de sus vehículos y la posibilidad de programar citas de
+                servicio de manera conveniente. Los mecánicos cuentan con herramientas avanzadas que les permiten
+                gestionar eficientemente las reparaciones y mantener un registro detallado de las intervenciones
+                realizadas. Por otro lado, los administradores tienen acceso a herramientas de análisis y reportes que
+                les permiten tomar decisiones informadas y optimizar la operación del taller.
+            </p>
+            <br>
+            <h1>Mision</h1>
+            <br>
+            <p>
+                Nuestra misión es revolucionar la gestión de talleres automotrices en Colombia mediante la
+                implementación de tecnologías de vanguardia. Estamos comprometidos a ofrecer soluciones integrales y
+                personalizadas que permitan a los talleres optimizar sus procesos, aumentar su productividad y ofrecer
+                un servicio de alta calidad a sus clientes. Al aprovechar la digitalización y la inteligencia
+                artificial, buscamos transformar la experiencia del cliente y mejorar la eficiencia operativa.
+            </p>
+            <br>
+            <p>
+                Nos esforzamos por ser un aliado estratégico para nuestros clientes, proporcionando herramientas que
+                faciliten la gestión diaria y promuevan el crecimiento sostenible en el sector automotriz. Creemos en la
+                importancia de la innovación constante, la capacitación continua y la adaptación a las necesidades
+                cambiantes del mercado. Nuestra misión también incluye el compromiso con la sostenibilidad,
+                asegurándonos de que nuestras soluciones contribuyan a la reducción de desperdicios y al uso eficiente
+                de los recursos. A través de nuestra plataforma, queremos capacitar a los talleres automotrices para que
+                puedan ofrecer un servicio excepcional, manteniendo altos estándares de calidad y satisfacción del
+                cliente.
+            </p>
+            <br>
+            <h1>Vision</h1>
+            <br>
+            <p>
+                Nos visualizamos como la empresa líder en la digitalización de la industria automotriz en Colombia,
+                reconocida por nuestra innovación, calidad y compromiso con la excelencia. Aspiramos a ser un referente
+                de éxito y crecimiento sostenible, impulsando la modernización de los talleres automotrices y elevando
+                los estándares de servicio en toda la industria.
+            </p>
+            <br>
+            <p>
+                Nuestro objetivo es seguir innovando y desarrollando soluciones avanzadas que se adapten a las
+                necesidades cambiantes del mercado automotriz colombiano. A largo plazo, buscamos expandir nuestro
+                impacto y contribuir significativamente al desarrollo y profesionalización del sector automotriz en el
+                país. Imaginamos un futuro en el que cada taller automotriz en Colombia esté equipado con nuestras
+                herramientas, permitiéndoles operar de manera más eficiente, reducir costos y mejorar la satisfacción
+                del cliente.
+            </p>
+            <br>
+            <p>
+                Aspiramos a ser un modelo a seguir en la industria, promoviendo prácticas de gestión óptimas y
+                sostenibles. Nuestro compromiso con la excelencia nos impulsa a superar constantemente las expectativas
+                de nuestros clientes, empleados y socios. A medida que crecemos, mantenemos nuestra dedicación a la
+                innovación, la integridad y el impacto positivo en la comunidad automotriz. Nuestra visión es contribuir
+                al avance de la tecnología en el sector automotriz y ser un pilar en la transformación digital de
+                talleres en toda Colombia.
+            </p>
+            <br>
+            <h2>Conoce más sobre nosotros en nuestro video:</h2>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QmwIjn6rwQA?si=TNJ82UhVPWKDS5Nq"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <h2>¡Encuentranos aqui!</h2>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11078.03935914233!2d-74.79089748491103!3d10.98763101975052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5cff2b82b8815%3A0x4e7910ae3b78e831!2sUniBarranquilla%20Sede%20Plaza%20De%20La%20Paz!5e0!3m2!1ses-419!2sco!4v1717804311299!5m2!1ses-419!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section contact">
+            <h2>Síguenos en:</h2>
+            <ul class="contact-icons">
+                <li><a href="https://www.facebook.com/UniBarranquilla/"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://x.com/UniBarranquilla"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://www.instagram.com/UniBarranquilla_/"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC76E4EukC9lbFQ4_rUD5nLw"><i
+                            class='bx bxl-youtube'></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Empresa | Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto_CS</title>
+    <link rel="stylesheet" href="css/estilo_externo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="base">
+        <form>
+            <h1>Inicio</h1>
+
+            <div class="entrada">
+                <input type="text" id="txt_usuario" placeholder="Usuario">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="entrada">
+                <input type="password" id="txt_contraseña" placeholder="Contraseña">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="links">
+                <p>
+                    <a href="html/recuperar.html">¿Olvidaste tu contraseña?</a>
+                </p>
+            </div>
+
+            <button type="button" class="btn" onclick="Ingresar()">Ingresar</button>
+
+            <div class="links">
+                <p>
+                    ¿No tienes una cuenta? <a href="html/registrarse.html">Regístrate</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="js/_index.js"></script>
+</body>
+
+</html>

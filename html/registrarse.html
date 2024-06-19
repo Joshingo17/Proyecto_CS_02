@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto_CS</title>
+    <link rel="stylesheet" href="../css/estilo_externo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="base">
+        <form>
+            <h1>Registrate</h1>
+
+            <div class="entrada">
+                <input type="text" id="nombre" placeholder="Nombre completo">
+                <i class='bx bx-face'></i>
+            </div>
+
+            <div class="entrada">
+                <input type="email" id="email" placeholder="Correo electrónico">
+                <i class='bx bx-envelope'></i>
+            </div>
+
+            <div class="entrada">
+                <input type="text" id="usuario" placeholder="Usuario">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="entrada">
+                <input type="password" id="contrasena" placeholder="Contraseña">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="entrada">
+                <input type="password" id="confirmar-contrasena" placeholder="Confirmar contraseña">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="button" class="btn" onclick="ND()">Registrarse</button>
+            <button type="button" class="btn" onclick="location.href='../index.html'">Regresar</button>
+        </form>
+    </div>
+    <script>
+        const ND = () => {
+            alert("Función no disponible");
+        };
+    </script>
+</body>
+
+</html>

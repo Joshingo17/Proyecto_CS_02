@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../img/F_new_index.jpg");
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-position: center;
+}
+
+.base {
+    width: 420px;
+    background: white;
+    border: 2px solid rgb(245, 241, 241);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.base h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.base .entrada {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.entrada input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    transition: border-color 0.3s;
+}
+
+.entrada input::placeholder {
+    color: black;
+}
+
+.entrada i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.entrada input:hover {
+    border-color: #fc1010;
+}
+
+.base .btn {
+    width: 100%;
+    height: 45px;
+    background: #d1cfcf;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.base .btn:last-of-type {
+    margin-bottom: 0;
+}
+
+.base .btn:hover {
+    background-color: #fc1010;
+    color: black;
+}
+
+.base .links {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.links p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links p a:hover {
+    text-decoration: underline;
+    color: #fc1010;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
